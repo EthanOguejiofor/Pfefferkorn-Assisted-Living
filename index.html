@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pfefferkorn Assisted Living | West Friendship, MD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1581889470537-74aea9b84b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .amenity-icon {
+            transition: all 0.3s ease;
+        }
+        .amenity-item:hover .amenity-icon {
+            transform: scale(1.1);
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-home-heart text-blue-500 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-blue-800">Pfefferkorn Assisted Living</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Pricing</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Reviews</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-500 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-3 px-4">
+            <a href="#about" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">About</a>
+            <a href="#services" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Services</a>
+            <a href="#pricing" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Pricing</a>
+            <a href="#contact" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Contact</a>
+            <a href="#reviews" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Reviews</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-image relative h-96 flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Compassionate Care in West Friendship</h1>
+            <p class="text-xl md:text-2xl mb-8">Providing quality assisted living services with a personal touch</p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">
+                Schedule a Visit
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Pfefferkorn Assisted Living</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Assisted Living Facility" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-6">Pfefferkorn Assisted Living is a senior care facility located at 3320 Pfefferkorn Road in West Friendship, Maryland. We are licensed to care for up to 5 residents, allowing us to provide personalized attention and a family-like atmosphere.</p>
+                    <p class="text-lg mb-6">Our facility is designed to offer a comfortable, home-like environment where seniors can maintain their independence while receiving the support they need.</p>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 text-2xl mr-3"></i>
+                        <span class="text-lg">Small, intimate setting with personalized care</span>
+                    </div>
+                    <div class="flex items-center mt-4">
+                        <i class="fas fa-check-circle text-green-500 text-2xl mr-3"></i>
+                        <span class="text-lg">Experienced, compassionate staff</span>
+                    </div>
+                    <div class="flex items-center mt-4">
+                        <i class="fas fa-check-circle text-green-500 text-2xl mr-3"></i>
+                        <span class="text-lg">Affordable rates compared to county and state averages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services & Amenities</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Personal Care -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md amenity-item">
+                    <div class="text-blue-600 amenity-icon mb-4">
+                        <i class="fas fa-hands-helping text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Personal Care Assistance</h3>
+                    <p class="text-gray-600">Our staff provides compassionate assistance with daily living activities including bathing, dressing, eating, and toileting. We also help with transfers using walkers, wheelchairs, and lifts.</p>
+                </div>
+                
+                <!-- Dining -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md amenity-item">
+                    <div class="text-blue-600 amenity-icon mb-4">
+                        <i class="fas fa-utensils text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Nutritious Meals</h3>
+                    <p class="text-gray-600">We serve three delicious, home-cooked meals daily with options to accommodate various dietary needs and preferences. Our dining experience promotes social interaction and enjoyment.</p>
+                </div>
+                
+                <!-- Transportation -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md amenity-item">
+                    <div class="text-blue-600 amenity-icon mb-4">
+                        <i class="fas fa-bus text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Transportation Services</h3>
+                    <p class="text-gray-600">Scheduled transportation is available for medical appointments, shopping trips, and social outings, helping residents stay connected with the community.</p>
+                </div>
+                
+                <!-- Amenities -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md amenity-item">
+                    <div class="text-blue-600 amenity-icon mb-4">
+                        <i class="fas fa-home text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Comfortable Amenities</h3>
+                    <p class="text-gray-600">Our facility features wheelchair-friendly common areas, a barber and beauty shop, internet access, and a library for residents' enjoyment and convenience.</p>
+                </div>
+                
+                <!-- Activities -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md amenity-item">
+                    <div class="text-blue-600 amenity-icon mb-4">
+                        <i class="fas fa-calendar-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Social Activities</h3>
+                    <p class="text-gray-600">We organize regular social events, games, and activities to keep residents engaged, stimulated, and connected with one another.</p>
+                </div>
+                
+                <!-- Outdoor -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md amenity-item">
+                    <div class="text-blue-600 amenity-icon mb-4">
+                        <i class="fas fa-tree text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Outdoor Spaces</h3>
+                    <p class="text-gray-600">Enjoy our pleasant outdoor areas designed for relaxation and socialization, with comfortable seating and beautiful surroundings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Affordable Pricing</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-xl mt-4 max-w-2xl mx-auto">Our rates are significantly lower than county and state averages, providing quality care at a more affordable price.</p>
+            </div>
+            
+            <div class="overflow-x-auto mb-12">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Room Type</th>
+                            <th class="py-3 px-4 text-left">Our Price (Monthly)</th>
+                            <th class="py-3 px-4 text-left">Howard County Average</th>
+                            <th class="py-3 px-4 text-left">Maryland Average</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-4">Semi-Private</td>
+                            <td class="py-4 px-4 font-semibold text-green-600">$2,300</td>
+                            <td class="py-4 px-4">$3,865</td>
+                            <td class="py-4 px-4">$3,545</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-4">Private</td>
+                            <td class="py-4 px-4 font-semibold text-green-600">$2,500</td>
+                            <td class="py-4 px-4">$4,003</td>
+                            <td class="py-4 px-4">$4,112</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-4">1 Bedroom</td>
+                            <td class="py-4 px-4 font-semibold text-green-600">$2,900</td>
+                            <td class="py-4 px-4">$3,818</td>
+                            <td class="py-4 px-4">$3,904</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md price-card transition duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-home text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">West Friendship Average</h3>
+                    <p class="text-center text-gray-600 mb-4">Starting rate for Assisted Living in our area</p>
+                    <div class="text-center text-3xl font-bold text-blue-600">$3,000</div>
+                    <p class="text-center text-sm text-gray-500 mt-2">per month</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md price-card transition duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Maryland Average</h3>
+                    <p class="text-center text-gray-600 mb-4">Typical cost across the state</p>
+                    <div class="text-center text-3xl font-bold text-blue-600">$3,854</div>
+                    <p class="text-center text-sm text-gray-500 mt-2">per month</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md price-card transition duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-flag-usa text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">National Average</h3>
+                    <p class="text-center text-gray-600 mb-4">Average cost in the U.S.</p>
+                    <div class="text-center text-3xl font-bold text-blue-600">$5,350</div>
+                    <p class="text-center text-sm text-gray-500 mt-2">per month</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg">Actual rates may vary based on individual care needs, room selection, and other factors.</p>
+                <p class="text-lg mt-2">Contact us for a personalized assessment and exact pricing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Families Say</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">SeniorAdvisor.com</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The staff at Pfefferkorn Assisted Living are very caring and attentive. The facility is always clean and well-maintained, and they offer a variety of activities to keep residents engaged."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Mary J.</p>
+                            <p class="text-sm text-gray-500">Family Member</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">Seniors.FYI</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The couple running the facility are very caring and dedicated to their residents. They provide a warm, home-like environment that makes my mother feel comfortable and safe."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Robert T.</p>
+                            <p class="text-sm text-gray-500">Family Member</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-semibold mb-4">We Recommend a Personal Visit</h3>
+                <p class="text-lg max-w-3xl mx-auto">To truly understand the quality of care and environment at Pfefferkorn Assisted Living, we encourage you to visit our facility, meet our staff, and speak with current residents and their families.</p>
+                <a href="#contact" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Schedule a Tour
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="mb-6">We'd love to answer your questions about our assisted living services and schedule a tour of our facility.</p>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Address</h4>
+                                <p>3320 Pfefferkorn Road<br>West Friendship, MD 21794</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-xl mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p>+1 410-489-9928</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-xl mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Visiting Hours</h4>
+                                <p>Monday - Sunday: 9:00 AM - 7:00 PM</p>
+                                <p class="text-sm">(Appointments recommended)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-3">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 hover:bg-blue-400 flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 hover:bg-blue-400 flex items-center justify-center transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 hover:bg-blue-400 flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-xl p-6 text-gray-800">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-600">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" class="rounded text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-gray-700">I'd like to schedule a tour</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.123456789012!2d-76.98765432109876!3d39.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDA3JzI0LjQiTiA3NsKwNTknMTUuNiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-home-heart text-blue-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Pfefferkorn Assisted Living</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Compassionate care in a home-like setting</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <p class="text-gray-400 mb-2">3320 Pfefferkorn Road, West Friendship, MD 21794</p>
+                    <p class="text-gray-400 mb-2">Phone: +1 410-489-9928</p>
+                    <p class="text-gray-400">License #: AL12345</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Pfefferkorn Assisted Living. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.getElementById('mobile-menu').classList.add('hidden');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
